@@ -2,5 +2,8 @@ para iniciar automaticamente pelo cmd edite o arquivo init.bat com o seu diretó
 
 exemplo:
 
-cd C:\File-Organizer\File-Organizer
+
+@echo off
+cd C:File-Organizer\File-Organizer
 main.py
+cmd /k
