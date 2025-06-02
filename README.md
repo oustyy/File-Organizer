@@ -81,10 +81,10 @@ O **File Organizer** é ideal para usuários que desejam manter suas pastas orga
 
 ```
 FILE-ORGANIZER/
-├── main.py                  # Script principal que executa a organização
-├── README.md                # Documentação do projeto
-├── .init.txt               # Arquivo para ignorar arquivos/pastas no Git
-└── init.bat         # Lista de dependências do projeto
+├── main.py                  
+├── README.md                
+├── .init.txt               
+└── init.bat         
 ```
 
 ---
