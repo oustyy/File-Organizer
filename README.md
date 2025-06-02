@@ -137,7 +137,7 @@ Este projeto foi criado por:
 
 | Nome     | Papel         | GitHub                    |
 |----------|---------------|---------------------------|
-| oustyy | Desenvolvedor | github.com/oustyy           |
+| oustyy | Desenvolvedor | https://github.com/oustyy   |
 
 ---
 
