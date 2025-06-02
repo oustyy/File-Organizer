@@ -36,7 +36,7 @@ O **File Organizer** é ideal para usuários que desejam manter suas pastas orga
 |--------------------|----------------------------------------|
 | **Python**         | Linguagem principal do script. 🐍      |
 | **tkinter**        | Interface para seleção de pastas. 🖼️  |
-| **colorama**       | Exibição de mensagens coloridas no terminal. 🌈 |
+| **colorama**       | Exibição de mensagens coloridas no terminal. 🎨 |
 | **tqdm**           | Barra de progresso para acompanhamento. ⏳ |
 | **os**             | Manipulação de arquivos e diretórios. 📂 |
 
