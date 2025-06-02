@@ -1,0 +1,6 @@
+para iniciar automaticamente pelo cmd edite o arquivo init.bat com o seu diretório!!!
+
+exemplo:
+
+cd C:\File-Organizer\File-Organizer
+main.py
