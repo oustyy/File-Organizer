@@ -1,7 +1,7 @@
 import os
 import time
 from tkinter.filedialog import askdirectory
-from colorama import init, Fore, Style
+from colorama import init, Fore,Back, Style
 from tqdm import tqdm
 
 init(autoreset=True)
@@ -102,7 +102,7 @@ with tqdm(total=total_arquivos, desc="Processando arquivos", bar_format="{l_bar}
                         destino_duplicado = os.path.join(pasta_duplicados_caminho, novo_nome)
                         print(Fore.YELLOW + f"Arquivo duplicado: {caminho_relativo}")
                         print(Fore.BLUE + f"Formato: {extensao or 'sem extensão'}")
-                        print(Fore.MAGENTA + f"Movendo para: {pasta_duplicados}/{novo_nome}")
+                        print(Back.MAGENTA + f"Movendo para: {pasta_duplicados}")
                         print(Fore.CYAN + "--------------------------------------------")
                         os.rename(caminho_completo, destino_duplicado)
                         arquivos_movidos += 1
@@ -111,7 +111,7 @@ with tqdm(total=total_arquivos, desc="Processando arquivos", bar_format="{l_bar}
                     else:
                         print(Fore.GREEN + f"Arquivo encontrado: {caminho_relativo}")
                         print(Fore.BLUE + f"Formato: {extensao or 'sem extensão'}")
-                        print(Fore.MAGENTA + f"Movendo para: {pasta}/{arquivo}")
+                        print(Fore.MAGENTA + f"Movendo para: {pasta}")
                         print(Fore.CYAN + "--------------------------------------------")
                         os.rename(caminho_completo, destino_arquivo)
                         arquivos_movidos += 1
@@ -137,7 +137,7 @@ with tqdm(total=total_arquivos, desc="Processando arquivos", bar_format="{l_bar}
                         destino_duplicado = os.path.join(pasta_duplicados_caminho, novo_nome)
                         print(Fore.YELLOW + f"Arquivo duplicado: {caminho_relativo}")
                         print(Fore.BLUE + f"Formato: {extensao}")
-                        print(Fore.MAGENTA + f"Movendo para: {pasta_duplicados}/{novo_nome}")
+                        print(Back.MAGENTA + f"Movendo para: {pasta_duplicados}")
                         print(Fore.CYAN + "--------------------------------------------")
                         os.rename(caminho_completo, destino_duplicado)
                         arquivos_movidos += 1
@@ -146,7 +146,7 @@ with tqdm(total=total_arquivos, desc="Processando arquivos", bar_format="{l_bar}
                     else:
                         print(Fore.GREEN + f"Arquivo encontrado: {caminho_relativo}")
                         print(Fore.BLUE + f"Formato: {extensao}")
-                        print(Fore.MAGENTA + f"Movendo para: {pasta}/{arquivo}")
+                        print(Back.MAGENTA + f"Movendo para :{pasta}" )
                         print(Fore.CYAN + "--------------------------------------------")
                         os.rename(caminho_completo, destino_arquivo)
                         arquivos_movidos += 1
@@ -173,7 +173,7 @@ while True:
 end_time = time.time()
 tempo_total = end_time - start_time
 print(Fore.BLUE + "======================================")
-print(Fore.GREEN + "Resumo do processo")
+print(Back.GREEN + Fore.BLACK + "Resumo do processo")
 print(Fore.BLUE + f"Tempo total: {tempo_total:.2f} segundos")
 print(Fore.GREEN + f"Pastas criadas: {pastas_criadas}")
 print(Fore.RED + f"Pastas deletadas: {pastas_deletadas}")
